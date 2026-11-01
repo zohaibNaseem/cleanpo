@@ -1,0 +1,44 @@
+{
+  "is_order": true,
+  "customer_name": "Rosa's Deli and Market",
+  "customer_email": null,
+  "po_number": "RD-2026-118",
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "RD-0042 Deli ham sliced 3 CS",
+      "item_code": "RD-0042",
+      "description": "Deli ham sliced",
+      "quantity": 3,
+      "unit": "CS",
+      "unit_price": null
+    },
+    {
+      "raw_text": "RD-0043 Provolone sliced 2 CS",
+      "item_code": "RD-0043",
+      "description": "Provolone sliced",
+      "quantity": 2,
+      "unit": "CS",
+      "unit_price": null
+    },
+    {
+      "raw_text": "RD-0107 Cream cheese loaves 1 CS",
+      "item_code": "RD-0107",
+      "description": "Cream cheese loaves",
+      "quantity": 1,
+      "unit": "CS",
+      "unit_price": null
+    },
+    {
+      "raw_text": "RD-0210 16oz deli cups w/ lids 2 CS",
+      "item_code": "RD-0210",
+      "description": "16oz deli cups w/ lids",
+      "quantity": 2,
+      "unit": "CS",
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

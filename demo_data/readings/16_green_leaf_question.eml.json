@@ -1,0 +1,11 @@
+{
+  "is_order": false,
+  "customer_name": "Green Leaf Cafe",
+  "customer_email": "sam@greenleafcafe.example",
+  "po_number": null,
+  "order_date": null,
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [],
+  "notes": "Question about invoice 44812, not an order."
+}

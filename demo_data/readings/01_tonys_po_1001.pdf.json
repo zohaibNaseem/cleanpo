@@ -1,0 +1,52 @@
+{
+  "is_order": true,
+  "customer_name": "Tony's Pizza Kitchen",
+  "customer_email": null,
+  "po_number": "TPK-1001",
+  "order_date": "2026-11-02",
+  "requested_delivery_date": "2026-11-06",
+  "ship_to": "1420 Main St, Houston TX",
+  "lines": [
+    {
+      "raw_text": "CAN-110 Tomato Paste #10 Can 10 case 42.5",
+      "item_code": "CAN-110",
+      "description": "Tomato Paste #10 Can",
+      "quantity": 10,
+      "unit": "case",
+      "unit_price": 42.5
+    },
+    {
+      "raw_text": "DAI-110 Mozzarella Shredded Whole Milk 5lb Bag 6 case 64.9",
+      "item_code": "DAI-110",
+      "description": "Mozzarella Shredded Whole Milk 5lb Bag",
+      "quantity": 6,
+      "unit": "case",
+      "unit_price": 64.9
+    },
+    {
+      "raw_text": "MEA-110 Pepperoni Sliced 25lb Case 2 case 106.0",
+      "item_code": "MEA-110",
+      "description": "Pepperoni Sliced 25lb Case",
+      "quantity": 2,
+      "unit": "case",
+      "unit_price": 106.0
+    },
+    {
+      "raw_text": "DRY-120 Flour High Gluten 50lb Bag 8 bag 24.9",
+      "item_code": "DRY-120",
+      "description": "Flour High Gluten 50lb Bag",
+      "quantity": 8,
+      "unit": "bag",
+      "unit_price": 24.9
+    },
+    {
+      "raw_text": "PAP-140 Pizza Box Kraft 16in 6 bundle 28.9",
+      "item_code": "PAP-140",
+      "description": "Pizza Box Kraft 16in",
+      "quantity": 6,
+      "unit": "bundle",
+      "unit_price": 28.9
+    }
+  ],
+  "notes": null
+}

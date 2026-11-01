@@ -1,0 +1,36 @@
+{
+  "is_order": true,
+  "customer_name": "Green Leaf Cafe",
+  "customer_email": "sam@greenleafcafe.example",
+  "po_number": null,
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "3 cases heavy cream",
+      "item_code": null,
+      "description": "heavy cream",
+      "quantity": 3,
+      "unit": "case",
+      "unit_price": null
+    },
+    {
+      "raw_text": "2 bags AP flour (50lb)",
+      "item_code": null,
+      "description": "AP flour 50lb",
+      "quantity": 2,
+      "unit": "bag",
+      "unit_price": null
+    },
+    {
+      "raw_text": "2 cases unsalted butter",
+      "item_code": null,
+      "description": "unsalted butter",
+      "quantity": 2,
+      "unit": "case",
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

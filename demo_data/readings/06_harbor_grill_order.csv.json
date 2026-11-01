@@ -1,0 +1,44 @@
+{
+  "is_order": true,
+  "customer_name": "Harbor Grill",
+  "customer_email": null,
+  "po_number": "HG-7781",
+  "order_date": null,
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "Fries 3/8 cut 30lb,5,case",
+      "item_code": null,
+      "description": "Fries 3/8 cut 30lb",
+      "quantity": 5,
+      "unit": "case",
+      "unit_price": null
+    },
+    {
+      "raw_text": "Jumbo chicken wings 40lb,2,case",
+      "item_code": null,
+      "description": "Jumbo chicken wings 40lb",
+      "quantity": 2,
+      "unit": "case",
+      "unit_price": null
+    },
+    {
+      "raw_text": "Fryer oil 35lb,3,jug",
+      "item_code": null,
+      "description": "Fryer oil 35lb",
+      "quantity": 3,
+      "unit": "jug",
+      "unit_price": null
+    },
+    {
+      "raw_text": "Romaine hearts,1,case",
+      "item_code": null,
+      "description": "Romaine hearts",
+      "quantity": 1,
+      "unit": "case",
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

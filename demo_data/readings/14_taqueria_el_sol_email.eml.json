@@ -1,0 +1,28 @@
+{
+  "is_order": true,
+  "customer_name": "Taqueria El Sol",
+  "customer_email": "elsol.orders@mail.example",
+  "po_number": null,
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "60 cans crushed tomatoes #10",
+      "item_code": null,
+      "description": "crushed tomatoes #10",
+      "quantity": 60,
+      "unit": "can",
+      "unit_price": null
+    },
+    {
+      "raw_text": "2 cases jalapeno slices #10",
+      "item_code": null,
+      "description": "jalapeno slices #10",
+      "quantity": 2,
+      "unit": "case",
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

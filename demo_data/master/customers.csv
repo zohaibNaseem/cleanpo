@@ -1,0 +1,21 @@
+account,name,email,address,delivery_days,credit_hold
+C-1001,Tony's Pizza Kitchen,orders@tonyspizza.example,"1420 Main St, Houston TX","Tue,Fri",no
+C-1002,Bella Napoli Trattoria,purchasing@bellanapoli.example,"88 Westheimer Rd, Houston TX","Mon,Thu",no
+C-1003,Green Leaf Cafe,sam@greenleafcafe.example,"301 Bagby St, Houston TX","Mon,Wed,Fri",no
+C-1004,Rosa's Deli and Market,buyer@rosasdeli.example,"915 Telephone Rd, Houston TX","Tue,Fri",no
+C-1005,Harbor Grill,kitchen@harborgrill.example,"22 Seawall Blvd, Galveston TX","Wed,Sat",no
+C-1006,Main Street Diner,mainstreetdiner@mail.example,"407 Main St, Pasadena TX","Mon,Thu",no
+C-1007,Sunrise Bakery,orders@sunrisebakery.example,"1190 Shepherd Dr, Houston TX","Mon,Wed,Fri",no
+C-1008,Gulf Breeze Seafood House,chef@gulfbreeze.example,"6 Pier Rd, Kemah TX","Tue,Fri",no
+C-1009,Midtown Burger Co,ops@midtownburger.example,"2700 Travis St, Houston TX","Mon,Thu",yes
+C-1010,Little Saigon Pho,order@littlesaigonpho.example,"11210 Bellaire Blvd, Houston TX","Tue,Sat",no
+C-1011,Taqueria El Sol,elsol.orders@mail.example,"5402 Airline Dr, Houston TX","Mon,Wed,Fri",no
+C-1012,Heights Coffee Bar,manager@heightscoffee.example,"19th St and Yale, Houston TX","Tue,Fri",no
+C-1013,Bayou City BBQ,pitmaster@bayoucitybbq.example,"3300 Navigation Blvd, Houston TX","Wed,Sat",no
+C-1014,Ocean Star Sushi,orders@oceanstarsushi.example,"2416 Kirby Dr, Houston TX","Tue,Fri",no
+C-1015,Campus Corner Pizza,campuscorner@mail.example,"4800 Calhoun Rd, Houston TX","Mon,Thu",no
+C-1016,Sugar Land Family Diner,sldiner@mail.example,"77 Town Center Blvd, Sugar Land TX","Mon,Thu",no
+C-1017,Riverside Senior Living Kitchen,foodservice@riversidesl.example,"500 Riverside Dr, Houston TX","Mon,Wed,Fri",no
+C-1018,Northside Elementary Cafeteria,cafeteria@northside-isd.example,"1200 Irvington Blvd, Houston TX","Mon,Thu",no
+C-1019,Copper Kettle Catering,events@copperkettle.example,"8100 Hillcroft St, Houston TX","Tue,Fri",no
+C-1020,Westchase Sports Bar,bar@westchasesports.example,"10500 Westheimer Rd, Houston TX","Wed,Sat",no

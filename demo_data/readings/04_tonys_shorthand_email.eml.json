@@ -1,0 +1,44 @@
+{
+  "is_order": true,
+  "customer_name": null,
+  "customer_email": "orders@tonyspizza.example",
+  "po_number": null,
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "10 cs tomato paste",
+      "item_code": null,
+      "description": "tomato paste",
+      "quantity": 10,
+      "unit": "cs",
+      "unit_price": null
+    },
+    {
+      "raw_text": "6 mozz 5lb",
+      "item_code": null,
+      "description": "mozz 5lb",
+      "quantity": 6,
+      "unit": null,
+      "unit_price": null
+    },
+    {
+      "raw_text": "2 pepperoni",
+      "item_code": null,
+      "description": "pepperoni",
+      "quantity": 2,
+      "unit": null,
+      "unit_price": null
+    },
+    {
+      "raw_text": "8 high gluten flour",
+      "item_code": null,
+      "description": "high gluten flour",
+      "quantity": 8,
+      "unit": null,
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

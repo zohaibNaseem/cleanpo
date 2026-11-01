@@ -1,0 +1,36 @@
+{
+  "is_order": true,
+  "customer_name": "Bella Napoli Trattoria",
+  "customer_email": null,
+  "po_number": "BN-5540",
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": "88 Westheimer Rd, Houston TX",
+  "lines": [
+    {
+      "raw_text": "Tomato paste #10 2 cs 38.0",
+      "item_code": null,
+      "description": "Tomato paste #10",
+      "quantity": 2,
+      "unit": "cs",
+      "unit_price": 38.0
+    },
+    {
+      "raw_text": "Crushed tomatoes #10 4 cs 36.9",
+      "item_code": null,
+      "description": "Crushed tomatoes #10",
+      "quantity": 4,
+      "unit": "cs",
+      "unit_price": 36.9
+    },
+    {
+      "raw_text": "Grated parmesan 5lb 2 cs 61.9",
+      "item_code": null,
+      "description": "Grated parmesan 5lb",
+      "quantity": 2,
+      "unit": "cs",
+      "unit_price": 61.9
+    }
+  ],
+  "notes": null
+}

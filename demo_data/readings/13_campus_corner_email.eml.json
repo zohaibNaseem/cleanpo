@@ -1,0 +1,36 @@
+{
+  "is_order": true,
+  "customer_name": "Campus Corner Pizza",
+  "customer_email": "campuscorner@mail.example",
+  "po_number": null,
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "2 olive oil 5L",
+      "item_code": null,
+      "description": "olive oil 5L",
+      "quantity": 2,
+      "unit": null,
+      "unit_price": null
+    },
+    {
+      "raw_text": "3 cs pizza sauce",
+      "item_code": null,
+      "description": "pizza sauce",
+      "quantity": 3,
+      "unit": "cs",
+      "unit_price": null
+    },
+    {
+      "raw_text": "4 cs shredded mozzarella",
+      "item_code": null,
+      "description": "shredded mozzarella",
+      "quantity": 4,
+      "unit": "cs",
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

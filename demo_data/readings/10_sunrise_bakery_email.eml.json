@@ -1,0 +1,28 @@
+{
+  "is_order": true,
+  "customer_name": "Sunrise Bakery",
+  "customer_email": "orders@sunrisebakery.example",
+  "po_number": null,
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "500 bags all purpose flour 50lb",
+      "item_code": null,
+      "description": "all purpose flour 50lb",
+      "quantity": 500,
+      "unit": "bag",
+      "unit_price": null
+    },
+    {
+      "raw_text": "4 bags granulated sugar",
+      "item_code": null,
+      "description": "granulated sugar",
+      "quantity": 4,
+      "unit": "bag",
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,28 @@
+{
+  "is_order": true,
+  "customer_name": "Lucky Dragon Kitchen",
+  "customer_email": "kevin@luckydragon.example",
+  "po_number": null,
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "4 cases canola oil 35lb",
+      "item_code": null,
+      "description": "canola oil 35lb",
+      "quantity": 4,
+      "unit": "case",
+      "unit_price": null
+    },
+    {
+      "raw_text": "2 cases jumbo wings",
+      "item_code": null,
+      "description": "jumbo wings",
+      "quantity": 2,
+      "unit": "case",
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

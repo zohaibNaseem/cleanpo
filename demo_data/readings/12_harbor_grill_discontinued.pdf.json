@@ -1,0 +1,28 @@
+{
+  "is_order": true,
+  "customer_name": "Harbor Grill",
+  "customer_email": null,
+  "po_number": "HG-7790",
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": "22 Seawall Blvd, Galveston TX",
+  "lines": [
+    {
+      "raw_text": "Artichoke hearts quartered #10 1 cs 72.4",
+      "item_code": null,
+      "description": "Artichoke hearts quartered #10",
+      "quantity": 1,
+      "unit": "cs",
+      "unit_price": 72.4
+    },
+    {
+      "raw_text": "Jumbo chicken wings 40lb 2 cs 136.0",
+      "item_code": null,
+      "description": "Jumbo chicken wings 40lb",
+      "quantity": 2,
+      "unit": "cs",
+      "unit_price": 136.0
+    }
+  ],
+  "notes": null
+}

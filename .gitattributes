@@ -1,0 +1,6 @@
+* text=auto
+*.pdf binary
+*.jpg binary
+*.png binary
+*.xlsx binary
+*.eml -text

@@ -1,0 +1,44 @@
+{
+  "is_order": true,
+  "customer_name": "Main Street Diner",
+  "customer_email": null,
+  "po_number": null,
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": null,
+  "lines": [
+    {
+      "raw_text": "3 cs eggs large",
+      "item_code": null,
+      "description": "eggs large",
+      "quantity": 3,
+      "unit": "cs",
+      "unit_price": null
+    },
+    {
+      "raw_text": "2 cs bacon sliced",
+      "item_code": null,
+      "description": "bacon sliced",
+      "quantity": 2,
+      "unit": "cs",
+      "unit_price": null
+    },
+    {
+      "raw_text": "2 bags russet potatoes 50#",
+      "item_code": null,
+      "description": "russet potatoes 50#",
+      "quantity": 2,
+      "unit": "bag",
+      "unit_price": null
+    },
+    {
+      "raw_text": "1 cs romaine",
+      "item_code": null,
+      "description": "romaine",
+      "quantity": 1,
+      "unit": "cs",
+      "unit_price": null
+    }
+  ],
+  "notes": null
+}

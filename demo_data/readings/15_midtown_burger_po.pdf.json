@@ -1,0 +1,28 @@
+{
+  "is_order": true,
+  "customer_name": "Midtown Burger Co",
+  "customer_email": null,
+  "po_number": "MB-0912",
+  "order_date": "2026-11-02",
+  "requested_delivery_date": null,
+  "ship_to": "2700 Travis St, Houston TX",
+  "lines": [
+    {
+      "raw_text": "Ground beef 80/20 10lb chub 4 cs 172.4",
+      "item_code": null,
+      "description": "Ground beef 80/20 10lb chub",
+      "quantity": 4,
+      "unit": "cs",
+      "unit_price": 172.4
+    },
+    {
+      "raw_text": "French fries 3/8 cut 4 cs 39.9",
+      "item_code": null,
+      "description": "French fries 3/8 cut",
+      "quantity": 4,
+      "unit": "cs",
+      "unit_price": 39.9
+    }
+  ],
+  "notes": null
+}

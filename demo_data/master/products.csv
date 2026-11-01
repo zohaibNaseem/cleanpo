@@ -1,0 +1,153 @@
+code,name,unit,pack_size,pack_unit,list_price,active
+CAN-110,Tomato Paste #10 Can,case,6,can,42.50,yes
+CAN-120,Crushed Tomatoes #10 Can,case,6,can,36.90,yes
+CAN-130,Diced Tomatoes #10 Can,case,6,can,35.40,yes
+CAN-140,Tomato Sauce #10 Can,case,6,can,33.80,yes
+CAN-150,Pizza Sauce Fully Prepared #10 Can,case,6,can,44.20,yes
+CAN-160,Black Olives Sliced #10 Can,case,6,can,58.75,yes
+CAN-170,Chickpeas Garbanzo #10 Can,case,6,can,31.60,yes
+CAN-180,Kidney Beans Dark Red #10 Can,case,6,can,30.95,yes
+CAN-190,Corn Whole Kernel #10 Can,case,6,can,29.40,yes
+CAN-200,Pineapple Tidbits #10 Can,case,6,can,39.80,yes
+CAN-210,Peaches Sliced Light Syrup #10 Can,case,6,can,41.30,yes
+CAN-220,Mushrooms Stems and Pieces #10 Can,case,6,can,47.60,yes
+CAN-230,Jalapeno Slices #10 Can,case,6,can,34.10,yes
+CAN-240,Artichoke Hearts Quartered #10 Can,case,6,can,72.40,no
+OIL-110,Olive Oil Pure 5L Jug,case,3,jug,96.00,yes
+OIL-120,Olive Oil Extra Virgin 5L Jug,case,3,jug,124.50,yes
+OIL-130,Canola Oil 35lb Jug,each,1,jug,41.75,yes
+OIL-140,Fryer Oil Clear Liquid 35lb Jug,each,1,jug,44.90,yes
+OIL-150,Vegetable Oil 1 Gallon,case,6,gallon,52.30,yes
+OIL-160,Red Wine Vinegar 1 Gallon,case,4,gallon,28.60,yes
+OIL-170,Balsamic Vinegar 1 Gallon,case,2,gallon,46.80,yes
+DAI-110,Mozzarella Shredded Whole Milk 5lb Bag,case,4,bag,68.40,yes
+DAI-120,Mozzarella Loaf Whole Milk 6lb,case,8,loaf,132.00,yes
+DAI-130,Parmesan Grated 5lb Bag,case,2,bag,61.90,yes
+DAI-140,Cheddar Shredded Mild 5lb Bag,case,4,bag,59.80,yes
+DAI-150,Provolone Sliced 5lb,case,4,pack,74.30,yes
+DAI-160,Ricotta Whole Milk 3lb Tub,case,4,tub,27.90,yes
+DAI-170,Butter Unsalted 1lb Solid,case,36,lb,118.80,yes
+DAI-180,Butter Salted 1lb Solid,case,36,lb,116.40,yes
+DAI-190,Heavy Cream 40% Half Gallon,case,6,carton,49.20,yes
+DAI-200,Whole Milk 1 Gallon,case,4,gallon,19.60,yes
+DAI-210,Cream Cheese 3lb Loaf,case,10,loaf,79.50,yes
+DAI-220,Eggs Large Grade AA 15 Dozen,case,1,case,38.70,yes
+DAI-230,Sour Cream 5lb Tub,case,2,tub,18.40,yes
+DRY-110,Flour All Purpose 50lb Bag,each,1,bag,21.40,yes
+DRY-120,Flour High Gluten 50lb Bag,each,1,bag,24.90,yes
+DRY-130,Sugar Granulated 50lb Bag,each,1,bag,38.60,yes
+DRY-140,Rice Long Grain 50lb Bag,each,1,bag,33.20,yes
+DRY-150,Spaghetti 20lb Case,case,1,case,22.80,yes
+DRY-160,Penne Rigate 20lb Case,case,1,case,23.40,yes
+DRY-170,Lasagna Sheets 10lb Case,case,1,case,19.90,yes
+DRY-180,Breadcrumbs Plain 25lb Bag,each,1,bag,27.60,yes
+DRY-190,Panko Breadcrumbs 25lb Bag,each,1,bag,41.20,yes
+DRY-200,Yeast Instant Dry 1lb,case,20,pack,64.00,yes
+DRY-210,Cornmeal Yellow 25lb Bag,each,1,bag,18.30,yes
+DRY-220,Salt Kosher 3lb Box,case,12,box,26.40,yes
+DRY-230,Black Pepper Ground 18oz,case,6,jar,71.40,yes
+DRY-240,Oregano Leaf 5oz,case,6,jar,32.90,yes
+DRY-250,Garlic Powder 21oz,case,6,jar,45.60,yes
+DRY-260,Red Pepper Crushed 12oz,case,6,jar,38.20,yes
+MEA-110,Pepperoni Sliced 25lb Case,case,1,case,112.50,yes
+MEA-120,Italian Sausage Crumbles Cooked 10lb,case,2,bag,69.80,yes
+MEA-130,Chicken Breast IQF 40lb Case,case,1,case,98.40,yes
+MEA-140,Chicken Wings Jumbo 40lb Case,case,1,case,136.00,yes
+MEA-150,Ground Beef 80/20 10lb Chub,case,4,chub,172.40,yes
+MEA-160,Bacon Sliced 15lb Case,case,1,case,84.60,yes
+MEA-170,Ham Sliced Deli 6lb,case,2,pack,52.20,yes
+MEA-180,Meatballs Cooked 1oz 10lb,case,1,case,46.30,yes
+FRZ-110,French Fries 3/8 Cut 30lb Case,case,6,bag,39.90,yes
+FRZ-120,Sweet Potato Fries 30lb Case,case,6,bag,58.20,yes
+FRZ-130,Mixed Vegetables 20lb Case,case,1,case,31.50,yes
+FRZ-140,Spinach Chopped 12lb Case,case,4,bag,28.80,yes
+FRZ-150,Pizza Dough Ball 16oz,case,40,ball,36.00,yes
+PRO-110,Romaine Hearts 12ct,case,1,case,34.50,yes
+PRO-120,Iceberg Lettuce 24ct,case,1,case,29.80,yes
+PRO-130,Tomatoes Roma 25lb,case,1,case,32.60,yes
+PRO-140,Onions Yellow Jumbo 50lb,each,1,bag,27.40,yes
+PRO-150,Potatoes Russet 50lb,each,1,bag,24.20,yes
+PRO-160,Garlic Peeled 5lb Jar,case,4,jar,38.90,yes
+PRO-170,Lemons 115ct,case,1,case,44.70,yes
+PRO-180,Basil Fresh 1lb,each,1,pack,14.60,yes
+PRO-190,Green Peppers Large 25lb,case,1,case,36.20,yes
+BEV-110,Cola Syrup Bag in Box 5 Gallon,each,1,box,108.00,yes
+BEV-120,Bottled Water 16.9oz 24pk,case,24,bottle,6.90,yes
+BEV-130,Iced Tea Unsweetened Brew Bags,case,24,bag,31.40,yes
+BEV-140,Coffee Ground Medium Roast 2.5oz Pack,case,42,pack,48.60,yes
+BEV-150,Orange Juice 100% 64oz,case,8,bottle,34.80,yes
+PAP-110,Pizza Box Kraft 10in,bundle,50,box,18.40,yes
+PAP-120,Pizza Box Kraft 12in,bundle,50,box,21.60,yes
+PAP-130,Pizza Box Kraft 14in,bundle,50,box,24.80,yes
+PAP-140,Pizza Box Kraft 16in,bundle,50,box,28.90,yes
+PAP-150,Pizza Box Kraft 18in,bundle,50,box,33.50,yes
+PAP-160,To-Go Container Hinged Foam-Free 6x6,case,200,container,42.00,yes
+PAP-170,To-Go Container Hinged Foam-Free 8x8,case,200,container,49.50,yes
+PAP-180,To-Go Container Hinged Foam-Free 9x9,case,200,container,54.80,yes
+PAP-190,To-Go Container Hinged Foam-Free 9x6,case,200,container,47.20,yes
+PAP-200,Deli Container with Lid 8oz,case,240,container,36.40,yes
+PAP-210,Deli Container with Lid 16oz,case,240,container,41.80,yes
+PAP-220,Deli Container with Lid 32oz,case,240,container,52.60,yes
+PAP-230,Hot Cup Paper 8oz,case,1000,cup,48.20,yes
+PAP-240,Hot Cup Paper 12oz,case,1000,cup,56.90,yes
+PAP-250,Hot Cup Paper 16oz,case,1000,cup,63.40,yes
+PAP-260,Hot Cup Paper 20oz,case,1000,cup,71.80,yes
+PAP-270,Cold Cup Plastic 12oz,case,1000,cup,61.30,yes
+PAP-280,Cold Cup Plastic 16oz,case,1000,cup,68.70,yes
+PAP-290,Cold Cup Plastic 24oz,case,1000,cup,79.90,yes
+PAP-300,Cold Cup Plastic 32oz,case,1000,cup,92.40,yes
+PAP-310,Cup Lid Flat 12-24oz,case,1000,lid,29.80,yes
+PAP-320,Cup Lid Flat 32oz,case,1000,lid,34.60,yes
+PAP-330,Gloves Nitrile Powder-Free Small,case,1000,glove,54.00,yes
+PAP-340,Gloves Nitrile Powder-Free Medium,case,1000,glove,54.00,yes
+PAP-350,Gloves Nitrile Powder-Free Large,case,1000,glove,54.00,yes
+PAP-360,Gloves Nitrile Powder-Free X-Large,case,1000,glove,57.20,yes
+PAP-370,Gloves Vinyl Powder-Free Medium,case,1000,glove,31.80,yes
+PAP-380,Gloves Vinyl Powder-Free Large,case,1000,glove,31.80,yes
+PAP-390,Gloves Vinyl Powder-Free X-Large,case,1000,glove,33.40,yes
+PAP-400,Napkins Dinner White 1-ply,case,3000,napkin,38.50,yes
+PAP-410,Napkins Dinner White 2-ply,case,3000,napkin,52.90,yes
+PAP-420,Trash Liners 33gal,case,100,liner,26.40,yes
+PAP-430,Trash Liners 45gal,case,100,liner,31.20,yes
+PAP-440,Trash Liners 56gal,case,100,liner,38.70,yes
+PAP-450,Aluminum Foil Roll 12in x 500ft,each,1,roll,24.60,yes
+PAP-460,Aluminum Foil Roll 18in x 500ft,each,1,roll,36.80,yes
+PAP-470,Plastic Wrap Roll 12in x 2000ft,each,1,roll,19.80,yes
+PAP-480,Plastic Wrap Roll 18in x 2000ft,each,1,roll,26.50,yes
+PAP-490,Cutlery Kit Wrapped Fork Knife Napkin,case,250,kit,27.90,yes
+PAP-500,Cutlery Kit Wrapped Fork Knife Spoon Napkin,case,250,kit,31.40,yes
+PAP-510,Straws Paper Wrapped 7.75in,case,3000,straw,44.20,yes
+PAP-520,Straws Paper Wrapped 10.25in,case,3000,straw,49.80,yes
+PAP-530,Portion Cup with Lid 2oz,case,2500,cup,43.60,yes
+PAP-540,Portion Cup with Lid 3.25oz,case,2500,cup,51.20,yes
+PAP-550,Portion Cup with Lid 4oz,case,2500,cup,57.40,yes
+CHM-110,Dish Detergent Liquid 1 Gallon,each,1,jug,18.90,yes
+CHM-120,Dish Detergent Liquid 5 Gallon,each,1,jug,74.50,yes
+CHM-130,Sanitizer Quat Concentrate 1 Gallon,each,1,jug,21.40,yes
+CHM-140,Sanitizer Quat Concentrate 2.5 Gallon,each,1,jug,46.20,yes
+CHM-150,Degreaser Heavy Duty 1 Gallon,each,1,jug,16.80,yes
+CHM-160,Degreaser Heavy Duty 5 Gallon,each,1,jug,66.90,yes
+CHM-170,Hand Soap Foam Refill 1000ml,case,6,refill,58.40,yes
+CHM-180,Hand Soap Foam Refill 1200ml,case,6,refill,64.80,yes
+CHM-190,Floor Cleaner Neutral 1 Gallon,case,4,jug,39.60,yes
+CHM-200,Floor Cleaner Neutral 2 Gallon,case,4,jug,61.20,yes
+CHM-210,Paper Towel Roll Hardwound 8in x 600ft,case,6,roll,42.80,yes
+CHM-220,Paper Towel Roll Hardwound 8in x 800ft,case,6,roll,51.40,yes
+DRY-270,Rice Basmati 10lb,each,1,bag,21.80,yes
+DRY-280,Rice Basmati 20lb,each,1,bag,39.60,yes
+DRY-290,Rice Basmati 40lb,each,1,bag,74.20,yes
+DRY-300,Sugar Powdered 2lb,each,1,bag,3.20,yes
+DRY-310,Sugar Powdered 25lb,each,1,bag,26.40,yes
+DRY-320,Sugar Powdered 50lb,each,1,bag,48.90,yes
+DRY-330,Honey Pure 5lb Jug,each,1,jug,24.60,yes
+DRY-340,Honey Pure 40lb Pail,each,1,jug,158.00,yes
+DRY-350,Ketchup Fancy #10 Can,case,6,can,29.80,yes
+DRY-360,Ketchup Fancy 1.14oz Packet,case,500,packet,21.40,yes
+DRY-370,Mayonnaise Extra Heavy 1 Gallon,case,4,jar,54.40,yes
+DRY-380,Mayonnaise Extra Heavy 12gm Packet,case,500,packet,26.80,yes
+DRY-390,Mustard Yellow 1 Gallon,case,4,jar,24.80,yes
+DRY-400,Mustard Yellow 5.5gm Packet,case,500,packet,18.30,yes
+DRY-410,Ranch Dressing 1 Gallon,case,4,jar,46.20,yes
+DRY-420,Ranch Dressing 1.5oz Cup,case,60,packet,32.70,yes
+DRY-430,Hot Sauce Louisiana Style 1 Gallon,case,4,jar,31.60,yes
+DRY-440,Hot Sauce Louisiana Style 6oz Bottle,case,24,packet,38.40,yes

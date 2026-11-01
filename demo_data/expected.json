@@ -1,0 +1,116 @@
+[
+  {
+    "file": "01_tonys_po_1001.pdf",
+    "status": "ready",
+    "issue_codes": [],
+    "story": "Clean PDF purchase order with our item codes."
+  },
+  {
+    "file": "02_bella_napoli_po.pdf",
+    "status": "ready",
+    "issue_codes": [],
+    "story": "PDF with descriptions only, no item codes."
+  },
+  {
+    "file": "03_green_leaf_email.eml",
+    "status": "ready",
+    "issue_codes": [],
+    "story": "Short e-mail in plain words."
+  },
+  {
+    "file": "04_tonys_shorthand_email.eml",
+    "status": "ready",
+    "issue_codes": [],
+    "story": "Shorthand e-mail; the memory list knows what Tony means."
+  },
+  {
+    "file": "05_rosas_deli_order.xlsx",
+    "status": "ready",
+    "issue_codes": [],
+    "story": "Excel sheet with the customer's own item numbers."
+  },
+  {
+    "file": "06_harbor_grill_order.csv",
+    "status": "ready",
+    "issue_codes": [],
+    "story": "CSV file from the customer's purchasing tool."
+  },
+  {
+    "file": "07_main_street_diner_scan.jpg",
+    "status": "ready",
+    "issue_codes": [],
+    "story": "Photo of a hand-written order form."
+  },
+  {
+    "file": "08_bella_napoli_old_price.pdf",
+    "status": "needs_review",
+    "issue_codes": [
+      "PRICE_MISMATCH"
+    ],
+    "story": "Planted error: tomato paste at $38.00, list price is $42.50."
+  },
+  {
+    "file": "09_tonys_po_1001_resent.pdf",
+    "status": "needs_review",
+    "issue_codes": [
+      "DUPLICATE_ORDER"
+    ],
+    "story": "Planted error: PO TPK-1001 sent a second time."
+  },
+  {
+    "file": "10_sunrise_bakery_email.eml",
+    "status": "needs_review",
+    "issue_codes": [
+      "QTY_UNUSUAL"
+    ],
+    "story": "Planted error: 500 bags of flour, usual order is about 10."
+  },
+  {
+    "file": "11_unknown_sender_email.eml",
+    "status": "needs_review",
+    "issue_codes": [
+      "CUSTOMER_UNKNOWN"
+    ],
+    "story": "Planted error: sender is not in the customer list."
+  },
+  {
+    "file": "12_harbor_grill_discontinued.pdf",
+    "status": "needs_review",
+    "issue_codes": [
+      "ITEM_INACTIVE"
+    ],
+    "story": "Planted error: artichoke hearts are discontinued."
+  },
+  {
+    "file": "13_campus_corner_email.eml",
+    "status": "needs_review",
+    "issue_codes": [
+      "ITEM_AMBIGUOUS"
+    ],
+    "story": "Planted problem: 'olive oil 5L' could be Pure or Extra Virgin."
+  },
+  {
+    "file": "14_taqueria_el_sol_email.eml",
+    "status": "ready",
+    "issue_codes": [
+      "UNIT_CONVERTED"
+    ],
+    "story": "Units: 60 cans become 10 cases (6 cans per case). Information only."
+  },
+  {
+    "file": "15_midtown_burger_po.pdf",
+    "status": "needs_review",
+    "issue_codes": [
+      "CREDIT_HOLD"
+    ],
+    "story": "Planted problem: customer account is on credit hold."
+  },
+  {
+    "file": "16_green_leaf_question.eml",
+    "status": "not_order",
+    "issue_codes": [
+      "NOT_AN_ORDER"
+    ],
+    "story": "Not an order: a billing question. Kept out of the import file."
+  }
+]
