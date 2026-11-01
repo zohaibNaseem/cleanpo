@@ -10,6 +10,20 @@ problem go to a review screen with the reason. A dashboard shows the time and mo
 All data in this repository is synthetic. The distributor "Lone Pine Food Supply", its
 customers, products and prices are made up.
 
+## Screenshots
+
+Dashboard: time and money saved, order value, orders that need a human.
+
+![CleanPO dashboard](docs/dashboard.png)
+
+Errors caught before entry, and the value of orders per customer.
+
+![Errors caught and customers](docs/dashboard-errors-customers.png)
+
+Review: the original order next to what CleanPO read, with one fix for each problem.
+
+![Review screen](docs/review.png)
+
 ## How an order moves
 
 1. **Read.** The Claude API reads the file and returns the customer, the lines, the quantities
@@ -57,8 +71,8 @@ The tests process the 16 sample orders and compare each result with `demo_data/e
 ## Time saved
 
 Time saved = (handled orders x manual minutes per order) - real review time.
-The manual minutes per order come from the client: the clerk times 10 orders by hand during
-the trial. The hourly rate default is the May 2025 BLS median wage for order clerks
+The default is 6 manual minutes per order. Replace it with the client's own value: the clerk
+times 10 orders by hand during the trial. The hourly rate default is the May 2025 BLS median wage for order clerks
 (USD 22.20). Both values are in Settings.
 
 ## Layout
@@ -73,6 +87,7 @@ cleanpo/metrics.py         dashboard numbers and synthetic demo history
 cleanpo/db.py              DuckDB tables
 scripts/make_demo_data.py  synthetic distributor, customers, products and 16 orders
 demo_data/                 the generated demo data
+docs/                      screenshots
 ```
 
 ## Status

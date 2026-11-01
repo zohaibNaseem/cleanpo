@@ -161,7 +161,8 @@ def change_text(now: float, before: float) -> str:
 def dark_layout(fig, height: int) -> None:
     fig.update_layout(height=height, margin=dict(l=8, r=8, t=8, b=8), bargap=0.4,
                       font=dict(color="#AEB5C4", size=12), hoverlabel=dict(bgcolor="#1A1F2B"),
-                      legend=dict(orientation="h", y=1.14, x=0, font=dict(color="#AEB5C4")),
+                      legend=dict(orientation="h", y=1.14, x=0, font=dict(color="#AEB5C4"),
+                                  entrywidth=120, entrywidthmode="pixels"),
                       plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
 
 
@@ -403,6 +404,9 @@ def page_process():
 
 def show_document(stored_path: str, source_type: str):
     path = Path(stored_path)
+    if not path.exists():
+        # The project folder can move; look for the same file name in the current inbox.
+        path = INBOX / path.name
     if not path.exists():
         st.caption("Original file not found.")
         return
