@@ -1,0 +1,245 @@
+{
+  "items": [
+    {
+      "item_code": "DAI-110",
+      "description": "Mozzarella Shredded Whole Milk 5lb Bag",
+      "unit": null,
+      "pack": "4/BAG",
+      "price": 68.4,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-120",
+      "description": "Mozzarella Loaf Whole Milk 6lb",
+      "unit": null,
+      "pack": "8/LOAF",
+      "price": 132.0,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-130",
+      "description": "Parmesan Grated 5lb Bag",
+      "unit": null,
+      "pack": "2/BAG",
+      "price": 61.9,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-140",
+      "description": "Cheddar Shredded Mild 5lb Bag",
+      "unit": null,
+      "pack": "4/BAG",
+      "price": 59.8,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-150",
+      "description": "Provolone Sliced 5lb",
+      "unit": null,
+      "pack": "4/PACK",
+      "price": 74.3,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-160",
+      "description": "Ricotta Whole Milk 3lb Tub",
+      "unit": null,
+      "pack": "4/TUB",
+      "price": 27.9,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-170",
+      "description": "Butter Unsalted 1lb Solid",
+      "unit": null,
+      "pack": "36/LB",
+      "price": 118.8,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-180",
+      "description": "Butter Salted 1lb Solid",
+      "unit": null,
+      "pack": "36/LB",
+      "price": 116.4,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-190",
+      "description": "Heavy Cream 40% Half Gallon",
+      "unit": null,
+      "pack": "6/CARTON",
+      "price": 49.2,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-200",
+      "description": "Whole Milk 1 Gallon",
+      "unit": null,
+      "pack": "4/GALLON",
+      "price": 19.6,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-210",
+      "description": "Cream Cheese 3lb Loaf",
+      "unit": null,
+      "pack": "10/LOAF",
+      "price": 79.5,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-220",
+      "description": "Eggs Large Grade AA 15 Dozen",
+      "unit": null,
+      "pack": "1/CASE",
+      "price": 38.7,
+      "discontinued": false
+    },
+    {
+      "item_code": "DAI-230",
+      "description": "Sour Cream 5lb Tub",
+      "unit": null,
+      "pack": "2/TUB",
+      "price": 18.4,
+      "discontinued": false
+    },
+    {
+      "item_code": "MEA-110",
+      "description": "Pepperoni Sliced 25lb Case",
+      "unit": null,
+      "pack": "1/CASE",
+      "price": 112.5,
+      "discontinued": false
+    },
+    {
+      "item_code": "MEA-120",
+      "description": "Italian Sausage Crumbles Cooked 10lb",
+      "unit": null,
+      "pack": "2/BAG",
+      "price": 69.8,
+      "discontinued": false
+    },
+    {
+      "item_code": "MEA-130",
+      "description": "Chicken Breast IQF 40lb Case",
+      "unit": null,
+      "pack": "1/CASE",
+      "price": 98.4,
+      "discontinued": false
+    },
+    {
+      "item_code": "MEA-140",
+      "description": "Chicken Wings Jumbo 40lb Case",
+      "unit": null,
+      "pack": "1/CASE",
+      "price": 136.0,
+      "discontinued": false
+    },
+    {
+      "item_code": "MEA-150",
+      "description": "Ground Beef 80/20 10lb Chub",
+      "unit": null,
+      "pack": "4/CHUB",
+      "price": 172.4,
+      "discontinued": false
+    },
+    {
+      "item_code": "MEA-160",
+      "description": "Bacon Sliced 15lb Case",
+      "unit": null,
+      "pack": "1/CASE",
+      "price": 84.6,
+      "discontinued": false
+    },
+    {
+      "item_code": "MEA-170",
+      "description": "Ham Sliced Deli 6lb",
+      "unit": null,
+      "pack": "2/PACK",
+      "price": 52.2,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-150",
+      "description": "Pizza Sauce Fully Prepared #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 44.2,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-160",
+      "description": "Black Olives Sliced #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 58.75,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-170",
+      "description": "Chickpeas Garbanzo #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 31.6,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-180",
+      "description": "Kidney Beans Dark Red #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 30.95,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-190",
+      "description": "Corn Whole Kernel #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 29.4,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-200",
+      "description": "Pineapple Tidbits #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 39.8,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-210",
+      "description": "Peaches Sliced Light Syrup #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 41.3,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-220",
+      "description": "Mushrooms Stems and Pieces #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 47.6,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-230",
+      "description": "Jalapeno Slices #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 34.1,
+      "discontinued": false
+    },
+    {
+      "item_code": "CAN-240",
+      "description": "Artichoke Hearts Quartered #10 Can",
+      "unit": null,
+      "pack": "6/#10",
+      "price": 72.4,
+      "discontinued": true
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,42 @@
+SKU,Product Name,Sell Unit,Case Pack,Price,Active
+CAN-110,Tomato Paste #10 Can,case,6,42.50,Y
+CAN-120,Crushed Tomatoes #10 Can,case,6,36.90,Y
+CAN-130,Diced Tomatoes #10 Can,case,6,35.40,Y
+CAN-140,Tomato Sauce #10 Can,case,6,33.80,Y
+CAN-150,Pizza Sauce Fully Prepared #10 Can,case,6,44.20,Y
+CAN-160,Black Olives Sliced #10 Can,case,6,,Y
+CAN-170,Chickpeas Garbanzo #10 Can,case,6,31.60,Y
+CAN-180,Kidney Beans Dark Red #10 Can,case,6,30.95,Y
+CAN-190,Corn Whole Kernel #10 Can,case,6,29.40,Y
+CAN-200,Pineapple Tidbits #10 Can,case,6,39.80,Y
+,Peaches Sliced Light Syrup #10 Can,case,6,41.30,Y
+CAN-220,Mushrooms Stems and Pieces #10 Can,case,6,47.60,Y
+CAN-230,Jalapeno Slices #10 Can,case,6,34.10,Y
+CAN-240,Artichoke Hearts Quartered #10 Can,case,6,72.40,N
+OIL-110,Olive Oil Pure 5L Jug,case,3,96.00,Y
+OIL-120,Olive Oil Extra Virgin 5L Jug,case,3,124.50,Y
+OIL-130,Canola Oil 35lb Jug,each,1,41.75,Y
+OIL-140,Fryer Oil Clear Liquid 35lb Jug,each,1,44.90,Y
+OIL-150,Vegetable Oil 1 Gallon,case,6,52.30,Y
+OIL-160,Red Wine Vinegar 1 Gallon,case,4,28.60,Y
+OIL-170,Balsamic Vinegar 1 Gallon,case,2,46.80,Y
+DAI-110,Mozzarella Shredded Whole Milk 5lb Bag,case,4,68.40,Y
+DAI-120,Mozzarella Loaf Whole Milk 6lb,case,8,132.00,Y
+DAI-130,Parmesan Grated 5lb Bag,case,2,61.90,Y
+DAI-140,Cheddar Shredded Mild 5lb Bag,case,4,59.80,Y
+DAI-150,Provolone Sliced 5lb,case,4,74.30,Y
+DAI-160,Ricotta Whole Milk 3lb Tub,case,4,27.90,Y
+DAI-170,Butter Unsalted 1lb Solid,case,36,118.80,Y
+DAI-180,Butter Salted 1lb Solid,case,36,116.40,Y
+DAI-190,Heavy Cream 40% Half Gallon,case,6,49.20,Y
+DAI-200,Whole Milk 1 Gallon,case,4,19.60,Y
+DAI-210,Cream Cheese 3lb Loaf,case,10,79.50,Y
+DAI-220,Eggs Large Grade AA 15 Dozen,case,1,38.70,Y
+DAI-230,Sour Cream 5lb Tub,case,2,18.40,Y
+DRY-110,Flour All Purpose 50lb Bag,each,1,21.40,Y
+DRY-120,Flour High Gluten 50lb Bag,each,1,24.90,Y
+DRY-130,Sugar Granulated 50lb Bag,each,1,38.60,Y
+DRY-140,Rice Long Grain 50lb Bag,each,1,33.20,Y
+DRY-150,Spaghetti 20lb Case,case,1,22.80,Y
+DRY-160,Penne Rigate 20lb Case,case,1,23.40,Y
+CAN-110,Tomato Paste #10 Can,case,6,45.00,Y
