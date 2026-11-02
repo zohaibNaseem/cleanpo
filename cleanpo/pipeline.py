@@ -10,16 +10,18 @@ from typing import Optional
 
 import duckdb
 
-from .matcher import Catalog, normalize_unit
+from .matcher import UNIT_WORDS, Catalog, CustomerMatch, normalize_unit
 from .reader import ReadError, Reader
 
 PRICE_TOLERANCE = 0.01        # 1 % difference from the price list is accepted
 UNUSUAL_FACTOR = 3            # more than 3 x the largest earlier quantity
 UNUSUAL_NO_HISTORY = 100      # no history: more than this quantity is unusual
 DUPLICATE_DAYS = 3
+KNOWN_UNITS = set(UNIT_WORDS.values())   # selling and pack units; sizes such as "lb" are not in it
 
 ISSUE_TEXT = {
     "CUSTOMER_UNKNOWN": "Customer not found in the customer list",
+    "CUSTOMER_ADDED": "New customer added for this test",
     "CREDIT_HOLD": "Customer account is on credit hold",
     "ITEM_AMBIGUOUS": "More than one product fits",
     "ITEM_UNMATCHED": "No product found",
@@ -51,8 +53,12 @@ def _status(issues: list[Issue], is_order: bool) -> str:
 
 
 def process_file(con: duckdb.DuckDBPyConnection, path: str | Path, catalog: Catalog, reader: Reader,
-                 inbox_dir: str | Path) -> int:
-    """Process one file and save the result. Return the new order id."""
+                 inbox_dir: str | Path, new_customers: bool = False) -> int:
+    """Process one file and save the result. Return the new order id.
+
+    new_customers: add a sender that is not in the customer list as a new customer, instead of
+    stopping the order. Use it for a free test, when the client did not send a customer list.
+    """
     path = Path(path)
     order_id = con.execute("SELECT nextval('order_id_seq')").fetchone()[0]
     inbox_dir = Path(inbox_dir)
@@ -77,8 +83,14 @@ def process_file(con: duckdb.DuckDBPyConnection, path: str | Path, catalog: Cata
     if not reading.is_order:
         issues.append(Issue("NOT_AN_ORDER", "info", reading.notes or "This message is not an order."))
     else:
+        who = reading.customer_name or result.sender_email or reading.customer_email or "unknown sender"
+        email_used = result.sender_email or reading.customer_email
+        if not customer.account and new_customers and (reading.customer_name or email_used):
+            account = catalog.add_customer(reading.customer_name, email_used)
+            customer = CustomerMatch(account, reading.customer_name or email_used, "new")
+            issues.append(Issue("CUSTOMER_ADDED", "info", f"'{who}' was not in the customer list. "
+                                                          f"Added as {account} for this test."))
         if not customer.account:
-            who = reading.customer_name or result.sender_email or reading.customer_email or "unknown sender"
             issues.append(Issue("CUSTOMER_UNKNOWN", "block", f"'{who}' is not in the customer list. New customer?"))
         elif customer.credit_hold:
             issues.append(Issue("CREDIT_HOLD", "block", f"{customer.name} ({customer.account}) is on credit hold. "
@@ -121,6 +133,13 @@ def process_file(con: duckdb.DuckDBPyConnection, path: str | Path, catalog: Cata
                 else:
                     issues.append(Issue("UNIT_MISMATCH", "block",
                                         f"{qty:g} {unit} is not a full {product.unit} ({product.pack_size} per {product.unit}).", no))
+            elif (unit and unit != "case" and unit not in (product.unit, product.pack_unit)
+                  and unit in KNOWN_UNITS):
+                # For example "60 can" when the product list does not say how many cans are in a case.
+                # "case" is not flagged: customers often write "cases" for items sold one by one.
+                issues.append(Issue("UNIT_MISMATCH", "block",
+                                    f"Ordered as {qty:g} {unit}, but {product.name} is sold per {product.unit}. "
+                                    "Check the quantity.", no))
             unit = unit_out
             if not product.active:
                 issues.append(Issue("ITEM_INACTIVE", "block", f"{product.code} {product.name} is discontinued. "

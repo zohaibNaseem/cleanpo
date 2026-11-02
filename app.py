@@ -11,7 +11,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from cleanpo import db, export, metrics
+from cleanpo import db, export, metrics, pricelist
 from cleanpo.matcher import Catalog
 from cleanpo.pipeline import ISSUE_TEXT, approve, process_file, reject
 from cleanpo.reader import PRICES_PER_MTOK, Reader, api_key_available, parse_email
@@ -350,6 +350,8 @@ def page_process():
     col1, col2 = st.columns([1, 3])
     run_uploaded = col1.button("Process files", type="primary", disabled=not files)
     run_samples = col2.button("Load sample orders")
+    new_customers = st.checkbox("Add senders that are not in the customer list as new customers (free test "
+                                "without a customer list)")
 
     paths: list[Path] = []
     if run_uploaded and files:
@@ -368,7 +370,7 @@ def page_process():
         ids = []
         for n, path in enumerate(paths, start=1):
             progress.progress((n - 1) / len(paths), text=f"Reading {path.name}")
-            ids.append(process_file(con, path, catalog, reader, INBOX))
+            ids.append(process_file(con, path, catalog, reader, INBOX, new_customers=new_customers))
         progress.progress(1.0, text="Done")
         st.session_state.last_batch = ids
 
@@ -660,6 +662,44 @@ def page_settings():
         st.rerun()
     learned = con.execute("SELECT count(*) FROM learned_aliases").fetchone()[0]
     st.caption(f"Memory list: {learned} product name(s) learned from reviews.")
+
+    st.subheader("Import a price list (any layout)")
+    st.caption("Excel or CSV in the client's own columns, a PDF, or a photo. Excel and CSV are read without AI; "
+               "a PDF or photo needs the API key. Check the result before you use it.")
+    price_file = st.file_uploader("Price list", type=["xlsx", "xls", "csv", "pdf", "jpg", "jpeg", "png"],
+                                  label_visibility="collapsed", key="price_list_file")
+    if price_file and st.button("Read price list"):
+        upload_dir = DATA / "uploads"
+        upload_dir.mkdir(parents=True, exist_ok=True)
+        target = upload_dir / price_file.name
+        target.write_bytes(price_file.getbuffer())
+        try:
+            with st.spinner("Reading the price list"):
+                st.session_state.price_list = pricelist.read_price_list(
+                    target, get_reader(), DEMO / "price_lists" / "readings")
+        except pricelist.PriceListError as exc:
+            st.session_state.pop("price_list", None)
+            st.error(str(exc))
+    pl = st.session_state.get("price_list")
+    if pl is not None:
+        a, b, c = st.columns(3)
+        a.metric("Products found", len(pl.products))
+        b.metric("Rows not loaded", pl.skipped)
+        c.metric("Section headings skipped", pl.headings_skipped)
+        how = {"columns": "Read from the columns, no AI", "claude": "Read by Claude",
+               "replay": "Saved demo reading"}[pl.method]
+        mapping = ", ".join(f"{field} = '{header}'" for field, header in pl.columns.items())
+        st.caption(f"{pl.source}. {how}." + (f" Columns: {mapping}." if mapping else "")
+                   + (f" API cost: ${pl.cost_usd:.4f}." if pl.cost_usd else ""))
+        if pl.problems:
+            st.dataframe(pl.problem_frame(), hide_index=True, use_container_width=True)
+        st.dataframe(pl.products, hide_index=True, use_container_width=True, height=280)
+        if st.button("Use this price list", type="primary", disabled=pl.products.empty):
+            pricelist.load_into(con, pl)
+            st.session_state.pop("catalog", None)
+            st.session_state.pop("price_list", None)
+            st.toast(f"{len(pl.products)} products loaded")
+            st.rerun()
 
     st.subheader("Sample data")
     d1, d2, d3 = st.columns(3)

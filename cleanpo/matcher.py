@@ -27,6 +27,11 @@ UNIT_WORDS = {
     "gallons": "gallon", "gal": "gallon", "jar": "jar", "jars": "jar", "roll": "roll", "rolls": "roll",
 }
 
+# Shared mail providers: the domain of such an address does not identify the customer.
+PUBLIC_MAIL_DOMAINS = {"gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "live.com", "msn.com",
+                       "aol.com", "icloud.com", "me.com", "comcast.net", "att.net", "sbcglobal.net",
+                       "verizon.net", "protonmail.com", "proton.me"}
+
 ACCEPT_SCORE = 90     # a name match must score at least this
 CLEAR_GAP = 6         # and be this much better than the next product
 CANDIDATE_SCORE = 60  # below this a product is not shown as a candidate
@@ -80,7 +85,7 @@ class ProductMatch:
 class CustomerMatch:
     account: Optional[str]
     name: Optional[str]
-    method: str                 # email | domain | name | none
+    method: str                 # email | domain | name | new | none
     credit_hold: bool = False
 
 
@@ -154,7 +159,7 @@ class Catalog:
             if not address or "@" not in address:
                 continue
             domain = address.split("@", 1)[1].lower()
-            if domain.startswith("mail."):
+            if domain.startswith("mail.") or domain in PUBLIC_MAIL_DOMAINS:
                 continue  # shared mail provider: the domain does not identify the customer
             hits = [c for c in self.customers if c[2] and c[2].endswith("@" + domain)]
             if len(hits) == 1:
@@ -168,6 +173,20 @@ class Catalog:
                 row = next(c for c in self.customers if c[0] == account)
                 return CustomerMatch(account, row[1], "name", row[3].lower() == "yes")
         return CustomerMatch(None, None, "none")
+
+    def add_customer(self, name: Optional[str], email: Optional[str]) -> str:
+        """Add a customer that is not in the list (free test without a customer list). Return the account."""
+        used = {c[0] for c in self.customers}
+        n = 1
+        while f"NEW-{n:03d}" in used:
+            n += 1
+        account = f"NEW-{n:03d}"
+        email = (email or "").lower().strip() or None
+        name = name or email or account
+        self.con.execute("INSERT INTO customers (account, name, email, credit_hold) VALUES (?, ?, ?, 'no')",
+                         [account, name, email])
+        self.customers.append((account, name, email, "no"))
+        return account
 
     # ----- Products --------------------------------------------------------
 

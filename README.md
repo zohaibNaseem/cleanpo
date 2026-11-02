@@ -59,6 +59,39 @@ On the first start, the app adds six weeks of synthetic history, so that the das
 trends. A note under the dashboard shows while this history exists. "Settings > Remove sample
 history" deletes it.
 
+## Import a price list
+
+A client sends the price list in the layout of their own system. CleanPO reads it into the
+product list:
+
+- **Excel or CSV.** Code finds the header row and the columns (for example "Item #",
+  "Description", "Pack/Size", "U/M", "Case Price", "Status"). Title rows, section headings and
+  "$" signs are permitted. No AI is used.
+- **PDF or photo.** The Claude API reads the list into a fixed structure. This needs the API key.
+- **Checks.** Rows without a code, without a price, or with a duplicate code are not loaded.
+  Each one is shown with its row number. A list without item codes gets codes P-0001, P-0002...
+- **Pack units.** CleanPO uses the inner unit ("6/#10", "8/LOAF") only when the list or the end
+  of the product name gives it. It does not guess. Without an inner unit, an order for "60 cans"
+  goes to review and is not converted.
+
+In the app: "Settings > Import a price list". Look at the result, then click "Use this price list".
+
+## Free test for a new client
+
+```
+python scripts/run_trial.py --orders <folder> --price-list <file> --out data/trials/<client>
+                            [--customers <file>]
+```
+
+The command reads the price list, processes all order files in the folder, and writes to the
+output folder: the products as read, the price-list problems, one import file for the ready
+orders, a summary workbook and `report.md`. Senders that are not in the customer list are added
+as new customers (NEW-001...). Copies of the files go to a temporary folder that is deleted at
+the end. Delete the output folder after the test.
+
+Sample price lists in four layouts are in `demo_data/price_lists/`
+(`python scripts/make_price_lists.py`).
+
 ## Tests
 
 ```
@@ -67,6 +100,9 @@ python -m pytest -q
 
 The tests process the 16 sample orders and compare each result with `demo_data/expected.json`:
 8 ready orders, 7 orders with one planted problem each, and 1 e-mail that is not an order.
+`tests/test_pricelist.py` reads the four sample price lists and compares each product with the
+master list. It also runs a full free test. The Claude path for price lists is tested with a
+fake API client.
 
 ## Time saved
 
@@ -84,15 +120,20 @@ cleanpo/matcher.py         customer and product matching
 cleanpo/pipeline.py        checks, sorting, approve and reject
 cleanpo/export.py          import CSV and summary workbook
 cleanpo/metrics.py         dashboard numbers and synthetic demo history
+cleanpo/pricelist.py       price-list and customer-list import, any layout
+cleanpo/trial.py           free-test runner
 cleanpo/db.py              DuckDB tables
 scripts/make_demo_data.py  synthetic distributor, customers, products and 16 orders
+scripts/make_price_lists.py  synthetic price lists in four layouts
+scripts/run_trial.py       free test from the command line
 demo_data/                 the generated demo data
 docs/                      screenshots
 ```
 
 ## Status
 
-- Tested in replay mode (22 tests pass).
-- The Claude API reading path is written to the current API documentation but has not yet run
-  against the live API. Test it with an API key before a client demo.
+- Tested in replay mode (49 tests pass).
+- The Claude API reading paths (orders and price lists) are written to the current API
+  documentation but have not yet run against the live API. Test them with an API key before
+  a client demo.
 - The import layout is a generic sales-order CSV. Change it to the client's ERP layout during setup.
